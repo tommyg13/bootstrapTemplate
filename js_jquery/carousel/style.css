@@ -1,0 +1,53 @@
+.carousel {
+  width: 600px;
+  height: 400px;
+  max-width: 100%;
+  position: relative;
+  margin:0 auto;
+}
+.slide {
+  width: 600px;
+  height: 400px;
+  max-width: 100%;
+  background: url("https://www.w3schools.com/css/trolltunga.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fa-arrow-right {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
+}
+
+ul li {
+  float: left;
+  list-style: none;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.tooltip {
+  width: 100px;
+  height: 100px;
+  position:relative;
+}

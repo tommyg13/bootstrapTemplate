@@ -19,7 +19,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "thomasgaz@hotmail.com";
+        $recipient = "test@info.com";
 
         // Set the email subject.
         $subject =  trim($_POST["subject"]);

@@ -42,6 +42,7 @@ $.ajax({
    $(formMessages).css("font-size:14px");
     // Set the message text.
     if (data.responseText !== '' && data.responseText !== undefined && data.responseText != object) {
+        console.log(typeof data.responseText)
         $(formMessages).text(data.responseText);
         console.log(data.responseText);
             $(".alert-danger").fadeTo(2e3, 500).slideUp(500, function() {

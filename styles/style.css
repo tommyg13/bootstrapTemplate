@@ -176,6 +176,20 @@ legend {
     padding-bottom:40px;
 }
 
+.projectsList {
+    display: flex;
+    width:300px;
+    max-width:100%;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.projectsList li {
+    cursor: pointer;
+    list-style: none;
+}
+
 .projects {
     display:flex;
     justify-content: space-around;
@@ -212,11 +226,16 @@ legend {
     -ms-transform: translate(-50%, -50%)
 }
 
-.text {
+.text a {
     color: #444343;
     font-size: 30px;
     padding: 16px 32px;
     font-weight: bold;
+}
+
+.text a:hover {
+    text-decoration: none;
+    color:blue;
 }
 
 .projectItem:hover img {

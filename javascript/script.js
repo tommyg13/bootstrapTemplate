@@ -1,4 +1,14 @@
 $(document).ready(function(){
+    $(".projectsList li").on("click",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        var id=$(this).attr("id");
+       if(id==="all") {
+           $(".projectItem").show().removeClass("fadeOut");
+       } else {
+           $('.projectItem:not(.'+id +'*)').hide().removeClass("fadeOut");
+            $("."+id).show().addClass("fadeOut");
+       }
+    });
 $(window).scroll(function() {
     scrollFunction()
     //Add animation to list items
@@ -23,7 +33,7 @@ $(window).scroll(function() {
 
 });
 //animate navbar's anchors
-$('.nav-item a').click(function(){
+$('.nav-item a, .divider a').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, "slow");

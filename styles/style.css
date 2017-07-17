@@ -190,6 +190,30 @@ legend {
     list-style: none;
 }
 
+.projectsList .active {
+    border-bottom:1px solid rebeccapurple;
+    color:#d93;
+}
+
+.fadeOut {
+     -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;    
+    animation-name: fadeOut;
+    animation-duration: 0.6s;   
+}
+
+ @-webkit-keyframes fadeOut {
+  from{ top:0px; } 
+  to{ top: 2020px; }
+} 
+
+@keyframes fadeOut { 
+  from{ top:0px;} 
+  to{ top: 2020px; }
+}
+
 .projects {
     display:flex;
     justify-content: space-around;
@@ -248,7 +272,6 @@ legend {
 .projectItem:hover .overlay {
   opacity: 1;
 }
-
 
 .animatedImg {
     -webkit-animation-name: show;

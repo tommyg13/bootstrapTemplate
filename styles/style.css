@@ -30,6 +30,7 @@ h1 {
 }
 
 .infos {
+    display: table-cell;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -122,6 +123,7 @@ legend {
 }
 
 .services {
+    display: table-cell;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
